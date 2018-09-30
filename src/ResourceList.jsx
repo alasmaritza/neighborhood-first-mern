@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import qs from 'query-string';
 import {Button, Glyphicon, Table, Panel } from 'react-bootstrap';
-import ResourceAdd from './ResourceAdd.jsx';
 import ResourceFilter from './ResourceFilter.jsx';
 //class ResourceTable extends React.Component {
 function ResourceTable(props) {
@@ -58,7 +57,7 @@ ResourceTable.propTypes = {
                 <td>{props.categories.name}</td>
                 {/* <td></td> */}
                 <td>{props.resource.name}</td>
-                <td>{props.resource.address.address1} {props.resource.address.address2} {props.resource.address.city}, {props.resource.address.state} {props.resource.address.zip}</td>
+                <td>{props.resource.address.address1 || null} {props.resource.address.address2 || null}<br></br>{props.resource.address.city} {props.resource.address.state} {props.resource.address.zip}</td>
                 <td>{props.resource.phone}</td>
                 <td>{props.resource.website}</td>
                 <td>{props.resource.comments}</td>

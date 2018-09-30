@@ -4,7 +4,7 @@ import { Col, Row, Form, FormGroup, FormControl, ControlLabel, InputGroup, Butto
 import PropTypes from 'prop-types';
 
 const FilterForm = (props) => {
-   // props.onChangeCategory(e);
+// props.onChangeCategory(e);
   function changeDropdown() {
        console.log('changed')
    }

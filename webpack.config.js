@@ -30,7 +30,12 @@ module.exports = {
             options: {
                 presets: ["react", "es2015"]
             }
-        }]
+        },
+        {
+            test: /\.css$/,
+            loader:'style-loader!css-loader!'
+        }
+    ]
     },
     devServer: {
         port: 8000,
