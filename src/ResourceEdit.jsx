@@ -95,35 +95,8 @@ const EditForm = (props) => {
                             No
                         </Radio>
                     </FormGroup>
-                    {/* <ButtonToolbar>
-                            <ToggleButtonGroup type="radio" name="isActive" value={resource.isActive} onChange={this.onToggleEnable}>
-                                <ToggleButton value={'true'}>True</ToggleButton>
-                                <ToggleButton value={'false'}>False</ToggleButton>
-                            </ToggleButtonGroup>
-                        </ButtonToolbar> */}
-                        {/* <label>
-                                <input
-                                    type="radio"
-                                    name="isActive"
-                                    value="true"
-                                    checked={resource.isActive === 'true'}
-                                    onChange={props.onChange} />
-                                    Yes
-                            </label>
-                            </div>
-                            <div className="radio">
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="isActive"
-                                        value="false"
-                                        checked={resource.isActive === 'false'}
-                                        onChange={props.onChange} />
-                                    No
-                                </label> */}
                 </Col>
             </FormGroup>
-
             <FormGroup>
                 <Col componentClass={ControlLabel} sm={2}>
                     Comments:
